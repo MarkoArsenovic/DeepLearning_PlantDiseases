@@ -36,6 +36,6 @@ The models on the graph were retrained on final fully connected layers only - **
 | VGG13         | from scratch  |    3.55           |   0.9795      |
 | VGG13         | deep          |    3.55           |   0.9949      |
 
-**NOTE**: All the others resutls are stored in [stats.csv](https://github.com/MarkoArsenovic/DeepLearning_PlantDiseases/blob/master/Results/stats.csv) 
+**NOTE**: All the others results are stored in [stats.csv](https://github.com/MarkoArsenovic/DeepLearning_PlantDiseases/blob/master/Results/stats.csv) 
 ## Graph
 ![Results](https://github.com/MarkoArsenovic/DeepLearning_PlantDiseases/blob/master/Results/results.png "Results")
