@@ -15,7 +15,7 @@ Dataset is consisted of **38** disease classes from [PlantVillage](https://plant
  ## Results:
 The models on the graph were retrained on final fully connected layers only - **shallow**, for the entire set of parameters - **deep** or from its initialized state - **from scratch**. 
 
- | Model        | Training type |Training time [~h] | Accuracy      |
+ | Model        | Training type |Training time [~h] | Accuracy Top 1|
 | ------------- |:-------------:|:-----------------:|:-------------:|
 | AlexNet       | shallow       |    0.87           |   0.9415      |  
 | AlexNet       | from scratch  |    1.05           |   0.9578      |  
