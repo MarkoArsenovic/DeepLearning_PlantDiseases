@@ -71,6 +71,8 @@ plt.text(400, 0.55, 'size = fps(%d-%d)' % (max_fps, min_fps), fontsize=14,
         va='bottom', ha='center')
 
 ax = plt.subplot(111)
+x = training_time[0]
+y = accuracy [0]
 ax.plot(x, y, label='alexnet', color=colors[0])
 ax.plot(x, y, label='densenet169',color=colors[1])
 ax.plot(x, y, label='inception_v3',color=colors[2])

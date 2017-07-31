@@ -77,7 +77,7 @@ def diff_states(dict_canonical, dict_subset):
         if v1.size() != v2.size():
             yield (name, v1)                
 
-def load_model_merged(name, num_classes):
+def load_defined_model(name, num_classes):
     
     model = models.__dict__[name](num_classes=num_classes)
     
@@ -116,7 +116,7 @@ def filtered_params(net, param_list=None):
 
 #Training and Evaluation
 
-def get_data(resize):
+def load_data(resize):
 
     data_transforms = {
         'train': transforms.Compose([
@@ -163,7 +163,7 @@ def train(net, trainloader, param_list=None, epochs=15):
         for p_fixed in (p for p in net.named_parameters() if not in_param_list(p[0])):
             p_fixed[1].requires_grad = False            
     
-    #Optimizer as in tutorial
+    #Optimizer as in paper
     optimizer = optim.SGD((p[1] for p in params), lr=0.001, momentum=0.9)
 
     losses = []
@@ -269,13 +269,13 @@ for name in models_to_test:
     print("")
     print("Targeting %s with %d classes" % (name, num_classes))
     print("------------------------------------------")
-    model_pretrained, diff = load_model_merged(name, num_classes)
+    model_pretrained, diff = load_defined_model(name, num_classes)
     final_params = [d[0] for d in diff]
     #final_params = None
     
     resize = [s[1] for s in input_sizes.items() if s[0] in name][0]
     print("Resizing input images to max of", resize)
-    trainloader, testloader = get_data(resize)
+    trainloader, testloader = load_data(resize)
     
     if use_gpu:
         print("Transfering models to GPU(s)")
@@ -299,7 +299,7 @@ for name in models_to_test:
 
     resize = [s[1] for s in input_sizes.items() if s[0] in name][0]
     print("Resizing input images to max of", resize)
-    trainloader, testloader = get_data(resize)
+    trainloader, testloader = load_data(resize)
     
     if use_gpu:
         print("Transfering models to GPU(s)")
@@ -325,11 +325,11 @@ for name in models_to_test:
     print("")
     print("Targeting %s with %d classes" % (name, num_classes))
     print("------------------------------------------")
-    model_pretrained, diff = load_model_merged(name, num_classes)
+    model_pretrained, diff = load_defined_model(name, num_classes)
     
     resize = [s[1] for s in input_sizes.items() if s[0] in name][0]
     print("Resizing input images to max of", resize)
-    trainloader, testloader = get_data(resize)
+    trainloader, testloader = load_data(resize)
     
     if use_gpu:
         print("Transfering models to GPU(s)")
