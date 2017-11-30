@@ -78,9 +78,9 @@ Produce the visualization and plot with  **saliency.py** and store the visualiza
  
   ### Visualization Examples on VGG13:
 
-![Early Blight ](https://raw.githubusercontent.com/MarkoArsenovic/DeepLearning_PlantDiseases/master/Scripts/visualization/output_saliency/early%20blight/early-blight.jpg)
-*early blight - original, deconv, guided*
-![Late Blight ](https://raw.githubusercontent.com/MarkoArsenovic/DeepLearning_PlantDiseases/master/Scripts/visualization/output_saliency/late%20blight/late-blight.jpg)
-*late blight - original, deconv, guided*
+![Early Blight ](https://raw.githubusercontent.com/MarkoArsenovic/DeepLearning_PlantDiseases/master/Scripts/visualization/output_saliency/early%20blight/early_blight.jpg)
+*early blight - Original, Naive backpropagation , Guided backpropagation*
+![Late Blight ](https://raw.githubusercontent.com/MarkoArsenovic/DeepLearning_PlantDiseases/master/Scripts/visualization/output_saliency/late%20blight/late_blight.jpg)
+*late blight - Original, Naive backpropagation , Guided backpropagation*
 ![Septoria Leaf Spot ](https://raw.githubusercontent.com/MarkoArsenovic/DeepLearning_PlantDiseases/master/Scripts/visualization/output_saliency/septoria/septoria.jpg)
-*septoria leaf spot - original, deconv, guided*
+*septoria leaf spot - Original, Naive backpropagation , Guided backpropagation*
