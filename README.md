@@ -40,14 +40,19 @@ The models on the graph were retrained on final fully connected layers only - **
 ## Graph
 ![Results](https://github.com/MarkoArsenovic/DeepLearning_PlantDiseases/blob/master/Results/results.png "Results")
 
-## Occlusion Experiment
+## Visualization Experiments
 
 **@Contributor**: [Brahimi Mohamed](mailto:m_brahimi@esi.dz)
+
+## Prerequisites:
+
+Train the new model or download pretrained models on **10 classes** of **Tomato** from PlantVillage dataset: [AlexNet](https://drive.google.com/open?id=1Ms1Ri5DUy_D4uYZX5tG2hrN2hUH6XbQS) or [VGG13](https://drive.google.com/open?id=1f0nPNRfL42fJA8tF5JoKUKv0Xr98p8-P).
+
+## Occlusion Experiment
 
 Occlusion experiments for producing the heat maps that show visually the influence of each region on the classification.
 
 ### Usage:
-Train the new model or download pretrained models on **10 classes** of **Tomato** from PlantVillage dataset: [AlexNet](https://drive.google.com/open?id=1Ms1Ri5DUy_D4uYZX5tG2hrN2hUH6XbQS) or [VGG13](https://drive.google.com/open?id=1f0nPNRfL42fJA8tF5JoKUKv0Xr98p8-P).
 
 Produce the heat map and plot with  **occlusion.py** and store the visualizations in **output_dir**:
  
@@ -60,3 +65,22 @@ Produce the heat map and plot with  **occlusion.py** and store the visualization
 *late blight - original, size 80 stride 10, size 100 stride 10*
 ![Septoria Leaf Spot ](https://raw.githubusercontent.com/MarkoArsenovic/DeepLearning_PlantDiseases/master/Scripts/visualization/output/septoria_leaf_spot/septoria_leaf_spot.png)
 *septoria leaf spot - original, size 50 stride 10, size 100 stride 10*
+
+## Saliency Map Experiment
+
+Saliency map is an analytical method that allows to estimate theimportance of each pixel, using only one forward and one backward pass through the network.
+
+### Usage:
+
+Produce the visualization and plot with  **saliency.py** and store the visualizations in **output_dir**:
+ 
+ `python3 occlusion.py /path/to/model /path/to/dataset /path/to/image class_name`
+ 
+  ### Visualization Examples on VGG13:
+
+![Early Blight ](https://raw.githubusercontent.com/MarkoArsenovic/DeepLearning_PlantDiseases/master/Scripts/visualization/output_saliency/early%20blight/early-blight.jpg)
+*early blight - original, deconv, guided*
+![Late Blight ](https://raw.githubusercontent.com/MarkoArsenovic/DeepLearning_PlantDiseases/master/Scripts/visualization/output_saliency/late%20blight/late-blight.jpg)
+*late blight - original, deconv, guided*
+![Septoria Leaf Spot ](https://raw.githubusercontent.com/MarkoArsenovic/DeepLearning_PlantDiseases/master/Scripts/visualization/output_saliency/septoria/septoria.jpg)
+*septoria leaf spot - original, deconv, guided*
