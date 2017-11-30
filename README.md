@@ -60,11 +60,11 @@ Produce the heat map and plot with  **occlusion.py** and store the visualization
  
  ### Visualization Examples on AlexNet:
 ![Early Blight ](https://raw.githubusercontent.com/MarkoArsenovic/DeepLearning_PlantDiseases/master/Scripts/visualization/output/early_blight/early_blight.png)
-*early blight - original, size 80 stride 10, size 100 stride 10*
+*Early blight - original, size 80 stride 10, size 100 stride 10*
 ![Late Blight ](https://raw.githubusercontent.com/MarkoArsenovic/DeepLearning_PlantDiseases/master/Scripts/visualization/output/late_blight/late_blight.png)
-*late blight - original, size 80 stride 10, size 100 stride 10*
+*Late blight - original, size 80 stride 10, size 100 stride 10*
 ![Septoria Leaf Spot ](https://raw.githubusercontent.com/MarkoArsenovic/DeepLearning_PlantDiseases/master/Scripts/visualization/output/septoria_leaf_spot/septoria_leaf_spot.png)
-*septoria leaf spot - original, size 50 stride 10, size 100 stride 10*
+*Septoria leaf spot - original, size 50 stride 10, size 100 stride 10*
 
 ## Saliency Map Experiment
 
@@ -79,8 +79,8 @@ Produce the visualization and plot with  **saliency.py** and store the visualiza
   ### Visualization Examples on VGG13:
 
 ![Early Blight ](https://raw.githubusercontent.com/MarkoArsenovic/DeepLearning_PlantDiseases/master/Scripts/visualization/output_saliency/early%20blight/early_blight.jpg)
-*early blight - Original, Naive backpropagation , Guided backpropagation*
+*Early blight - Original, Naive backpropagation , Guided backpropagation*
 ![Late Blight ](https://raw.githubusercontent.com/MarkoArsenovic/DeepLearning_PlantDiseases/master/Scripts/visualization/output_saliency/late%20blight/late_blight.jpg)
-*late blight - Original, Naive backpropagation , Guided backpropagation*
+*Late blight - Original, Naive backpropagation , Guided backpropagation*
 ![Septoria Leaf Spot ](https://raw.githubusercontent.com/MarkoArsenovic/DeepLearning_PlantDiseases/master/Scripts/visualization/output_saliency/septoria/septoria.jpg)
-*septoria leaf spot - Original, Naive backpropagation , Guided backpropagation*
+*Septoria leaf spot - Original, Naive backpropagation , Guided backpropagation*
