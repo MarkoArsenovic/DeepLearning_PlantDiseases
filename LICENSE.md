@@ -1,4 +1,4 @@
-#The MIT License (MIT)
+The MIT License (MIT)
 
 Copyright (c) 2018 Marko Arsenovic, Brahimi Mohamed
 
@@ -13,7 +13,10 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 If using code in academic papers, you can cite a paper: 
+
 [Deep Learning for Plant Diseases: Detection and Saliency Map Visualisation](https://link.springer.com/chapter/10.1007/978-3-319-90403-0_6)
 ```
-Brahimi, M., Arsenovic, M., Laraba, S., Sladojevic, S., Boukhalfa, K., & Moussaoui, A. (2018).Deep Learning for Plant Diseases: Detection and Saliency Map Visualisation. In Human and Machine Learning (pp. 93-117). Springer, Cham
+Brahimi, M., Arsenovic, M., Laraba, S., Sladojevic, S., Boukhalfa, K., & Moussaoui, A. (2018).
+Deep Learning for Plant Diseases: Detection and Saliency Map Visualisation. 
+In Human and Machine Learning (pp. 93-117). Springer, Cham
 ```
