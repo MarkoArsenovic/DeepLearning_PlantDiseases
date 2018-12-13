@@ -93,20 +93,13 @@ NOTE: When using (any part) of this repository, please cite  [Deep Learning for 
 
 ```
 @Inbook{Brahimi2018,
-author="Brahimi, Mohammed
-and Arsenovic, Marko
-and Laraba, Sohaib
-and Sladojevic, Srdjan
-and Boukhalfa, Kamel
-and Moussaoui, Abdelouhab",
-editor="Zhou, Jianlong
-and Chen, Fang",
-title="Deep Learning for Plant Diseases: Detection and Saliency Map Visualisation",
-bookTitle="Human and Machine Learning: Visible, Explainable, Trustworthy and Transparent",
-year="2018",
-publisher="Springer International Publishing",
-address="Cham",
-pages="93--117",
-url="https://doi.org/10.1007/978-3-319-90403-0_6"
+  author     = "Brahimi, Mohammed and Arsenovic, Marko and Laraba, Sohaib and Sladojevic, Srdjan and Boukhalfa, Kamel and Moussaoui, Abdelouhab",
+  editor     = "Zhou, Jianlong and Chen, Fang",
+  title      = "Deep Learning for Plant Diseases: Detection and Saliency Map Visualisation",
+  bookTitle  = "Human and Machine Learning: Visible, Explainable, Trustworthy and Transparent", year="2018",
+  publisher  = "Springer International Publishing",
+  address    = "Cham",
+  pages      = "93--117",
+  url        = "https://doi.org/10.1007/978-3-319-90403-0_6"
 }
 ```
